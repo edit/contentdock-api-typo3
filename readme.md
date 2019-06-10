@@ -26,19 +26,18 @@ More information about the API:
 
 ## Usage of this example
 
-1. Clone the repository
+### 1. Clone the repository
 
 * `git clone https://github.com/edit/contentdock-api-typo3.git`
 
 
-2. Prepare tables
-Extend the tables that you want to transfer to contentDock with the field
+###  2. Extend the tables that you want to transfer to contentDock with the field
 
 `ALTER TABLE tbl_name
 	add contentdock_id int(11) unsigned DEFAULT '0';`
 
 
-3. Extend the class `MyDataUtility.php`
+### 3. Extend the class `MyDataUtility.php`
 
 Update the properties:
 
@@ -51,10 +50,9 @@ Update the properties:
 Check the function `getRecordData`and set here the values for the `$data` array.
 
 
-4. Install and activate the contentDock extension with the TYPO3 extension manager
+### 4. Install and activate the contentDock extension with the TYPO3 extension manager
 
-
-5. Configure the contentDock extension in the TYPO3 Extension Manager.
+Configure the contentDock extension in the TYPO3 Extension Manager.
 
 Set here:
 
@@ -62,7 +60,9 @@ Set here:
 * `contentDock client subdomain` - Set your contentDock web address here. Please do NOT set '.contentdock.com'.
 
 
-6. Now you should see a new backend module "contentDock" in TYPO3 with the functions:
+### 5. Now you should see a new TYPO3 backend module "contentDock"
+
+The following functions are available:
 
 * `Operations` - Shows all requests sent to contentdock.
 * `Data Container Structure` - Load the structure from all your configured Data Containers in contentDock.

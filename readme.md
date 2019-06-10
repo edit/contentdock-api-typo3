@@ -78,7 +78,7 @@ contentDock processes all API Data record requests (insert, update, delete) asyn
 For production you should also use the contentDock Webhook configuration for Data Containers. You can find this configuration in your contentDock account settings. Here you can define a URL that calls contentDock after processing your API process. So you can integrate the API fully automated into your workflow. 
 
 ### Audit
-You can retrieve the results of a process id from contentDock at any time. So every process can be checked afterwards. You can integrate this into your audits.
+You can retrieve the results of a process id from contentDock at any time. So every process can be checked afterwards. In your client account you can check additionally the API history for your Data Container table. There you can see all API requests and you can also check when the request was processed and with which results.
 
 
 # Contributing

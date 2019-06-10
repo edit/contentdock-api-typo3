@@ -72,7 +72,13 @@ The following functions are available:
 
 
 ## Production mode
-contentDock processes all API Data record requests (insert, update, delete) asynchronously. You receive a process ID with which you can check whether the process was processed by contentDock. For production you should also use the contentDock Webhook configuration for Datan Containers. You can find this configuration in your contentDock account settings. Here you can define a URL that calls contentDock after processing your API process. So you can integrate the API fully automated into your workflow. You can retrieve the results of a process id from contentDock at any time. So every process can be checked afterwards. You can integrate this into your audits.
+contentDock processes all API Data record requests (insert, update, delete) asynchronously. You receive a process ID with which you can check whether the request was processed by contentDock. 
+
+### Automated Workflow with the contentDock Webhook
+For production you should also use the contentDock Webhook configuration for Data Containers. You can find this configuration in your contentDock account settings. Here you can define a URL that calls contentDock after processing your API process. So you can integrate the API fully automated into your workflow. 
+
+### Audit
+You can retrieve the results of a process id from contentDock at any time. So every process can be checked afterwards. You can integrate this into your audits.
 
 
 # Contributing

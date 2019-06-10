@@ -1,0 +1,38 @@
+<html xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+<f:layout name="defaultLayout" />
+
+<f:section name="content">
+
+	<h4>All Operations</h4>
+	<table class="table table-striped table-hover">
+		<thead>
+			<tr>
+				<th>Process ID</th>
+				<th>Command</th>
+				<th>Agent</th>
+				<th>Action</th>			
+			</tr>
+		</thead>	
+		<tbody>
+			<f:for each="{operations}" as="record">
+				<tr>
+					<td>{record.operation}</td>	
+					<td>{record.command}</td>	
+					<td>{record.agent}</td>	
+					<td>
+						<f:if condition="{record.finished}">
+						<f:then>
+							finished
+						</f:then>
+						<f:else>
+							<f:link.action action="getOperation" arguments="{processId: record.operation}" class="btn btn-default btn-sm">Check process</f:link.action>
+						</f:else>
+					</f:if>
+					</td>	
+				</tr>
+			</f:for>
+		</tbody>
+	</table>
+
+</f:section>
+</html>

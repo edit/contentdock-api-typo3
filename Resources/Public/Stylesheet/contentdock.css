@@ -1,0 +1,18 @@
+.typo3-docbody {
+        background-color: #ddd;
+}
+
+.callout-notice {
+
+}
+
+.btn-info {
+	background-color: #53af02;
+	border-color: #53af02;
+}
+
+.module-docheader .module-docheader-bar {
+    min-height: 26px;
+    margin: 4px 0;
+    line-height: 26px;
+}

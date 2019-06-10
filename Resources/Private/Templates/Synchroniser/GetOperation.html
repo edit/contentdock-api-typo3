@@ -1,0 +1,54 @@
+<html xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+<f:layout name="defaultLayout" />
+
+<f:section name="content">
+
+	<h3>Check the asynchronous Process on contentDock</h3>
+	<dl>
+	<dt>Process ID:</dt>
+	<dd>{processId}</dd>
+	<dt>Progress:</dt>
+	<dd>{progress}%</dd>
+	<dt>DataContainer table ID</dt>
+	<dd>{container}</dd>
+	<dt>DataContainer table name</dt>
+	<dd>{containerName}</dd>
+	<dt>Agent</dt>
+	<dd>{agent}</dd>
+	</dl>
+
+	<f:if condition="{errorMessage}">
+		<h4>Error</h4>
+		<p>{errorMessage}</p>
+	</f:if>
+
+	<h4>Process response</h4>
+	<table class="table table-striped table-hover">
+		<thead>
+			<tr>
+				<th>ReferenceUid</th>
+				<th>Message</th>
+				<th>contentdockRecordUid</th>
+			</tr>
+		</thead>	
+		<tbody>
+			<f:for each="{resultProcess}" as="data">
+				<f:for each="{data.operations}" as="operations">
+					<f:for each="{operations.records}" as="record">
+						<tr>
+							<td>{record.referenceUid}</td>	
+							<td>{record.message}</td>	
+							<td>{record.contentdockRecordUid}</td>	
+						</tr>
+					</f:for>
+				</f:for>
+			</f:for>
+		</tbody>
+	</table>
+
+	<f:if condition="!{finished}">
+		<f:link.action action="getOperation" arguments="{processId: processId}" class="btn btn-default btn-sm">Check process {processId} again</f:link.action>
+	</f:if>
+	
+</f:section>
+</html>

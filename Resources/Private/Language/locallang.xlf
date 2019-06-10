@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-02-02T11:22:55Z" product-name="contentdock">
+		<header/>
+		<body>
+			<trans-unit id="tx_contentdock_domain_model_process">
+				<source>contentDock API Operations</source>
+			</trans-unit>
+			<trans-unit id="tx_contentdock_domain_model_process.agent">
+				<source>Programm agent</source>
+			</trans-unit>
+			<trans-unit id="tx_contentdock_domain_model_process.container">
+				<source>contentDock DataContainer Tabel ID</source>
+			</trans-unit>
+			<trans-unit id="tx_contentdock_domain_model_process.command">
+				<source>contentDock API Command</source>
+			</trans-unit>
+			<trans-unit id="tx_contentdock_domain_model_process.operation">
+				<source>contentDock API operation ID</source>
+			</trans-unit>
+			<trans-unit id="tx_contentdock_domain_model_process.data">
+				<source>Request data</source>
+			</trans-unit>
+			<trans-unit id="tx_contentdock_domain_model_process.result">
+				<source>Response data</source>
+			</trans-unit>
+			<trans-unit id="tx_contentdock_domain_model_process.finished">
+				<source>Process finished</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

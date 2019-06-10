@@ -1,0 +1,33 @@
+<html xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+<f:layout name="defaultLayout" />
+
+<f:section name="content">
+
+	<h4>Your contentDock DataContainer</h4>
+	<f:for each="{container}" as="container" key="name">
+		<h2>DataContainer: {name}</h2>
+		<f:for each="{container}" as="table">
+			<h4>Table: {table.title}</h4>
+			<p>Table ID: {table.id}</p>
+			<table class="table table-striped table-hover">
+				<thead>
+					<tr>
+						<th>Field name</th>
+						<th>Field type</th>
+					</tr>
+				</thead>	
+				<tbody>
+					<f:for each="{table.fields}" as="fields">
+
+						<tr>
+							<td>{fields.name}</td>	
+							<td>{fields.type}</td>	
+						</tr>
+					</f:for>
+				</tbody>
+			</table>
+		</f:for>
+	</f:for>
+	
+</f:section>
+</html>

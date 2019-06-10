@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2019-02-02T12:00:00Z" product-name="contentdock">
+		<header/>
+		<body>
+			<trans-unit id="mlang_tabs_tab">
+				<source>contentDock</source>
+				<target state="translated">contentDock</target>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>

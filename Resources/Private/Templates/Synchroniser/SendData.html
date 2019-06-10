@@ -1,0 +1,16 @@
+<html xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+<f:layout name="defaultLayout" />
+
+<f:section name="content">
+
+	<h2>Command: pushToDataContainerTable - Insert/Update</h2>
+
+	<f:for each="{operations}" as="data">
+		<h4>T3: Table: {data.table}</h4>
+		<p>Status: {data.operation.status}</p>
+		<p>Process ID: {data.operation.processId}</p>
+		<f:link.action action="getOperation" arguments="{processId: data.operation.processId}" class="btn btn-default btn-sm">Check the asynchronous process {processId}</f:link.action>
+	</f:for>
+	
+</f:section>
+</html>

@@ -1,0 +1,45 @@
+<f:be.container 
+  includeCssFiles="{0: '{f:uri.resource(path:\'Stylesheet/contentdock.css\')}'}">
+    <div class="module">
+        <div class="module-docheader">
+            <div class="typo3-docheader-functions">
+                <div class="module-docheader-bar module-docheader-bar-navigation">
+                    <div class="module-docheader-bar-column-left">
+                        <div class="btn-group btn-group-xs" role="group">
+                            <f:link.action action="index" class="btn btn-default btn-sm">Operations</f:link.action>
+                            <f:link.action action="getDataContainer" class="btn btn-default btn-sm">DataContainer Structure</f:link.action>
+                            <f:link.action action="sendData" class="btn btn-default btn-sm">Send records </f:link.action>
+                            <f:link.action action="deleteAllRecords" class="btn btn-default btn-sm">Delete all records</f:link.action>
+                            <f:link.action action="getDataRecords" class="btn btn-default btn-sm">Get records from DataContainer</f:link.action>
+                        </div>
+                    </div>
+                    <div class="module-docheader-bar-column-right">
+                        <f:be.pagePath />
+                    </div>
+                </div>
+            </div>
+            <div class="module-docheader-bar module-docheader-bar-buttons">
+                <div class="module-docheader-bar-column-left">
+                    &nbsp;
+                </div>
+                <div class="module-docheader-bar-column-right">
+                    <f:be.buttons.shortcut />
+                </div>
+            </div>
+        </div>
+        <div class="module-body">
+            <f:flashMessages />
+            <h1>contentDock</h1>
+            <p>Create your own mobile contentApps with contentDock and with the contentDock API you manage the DataContainers that you can use in your app.</p>
+            <f:be.infobox title="Information"><p>More about contentDock you find at</p><a href="https://www.contentdock.com/en" class="btn btn-info" target="blank">www.contentdock.com</a>&nbsp;<a href="https://contentdock.com/en/documentation/api" class="btn btn-info" target="blank">API Documentation</a> </f:be.infobox>
+            <p>This extension demonstrates how to use the contentDock API and how to send data tables from TYPO3 to contentDock DataContainers.</p>
+
+            <f:render section="content" />
+        </div>
+    </div>
+</f:be.container>
+
+
+
+
+

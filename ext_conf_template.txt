@@ -1,0 +1,13 @@
+# cat=basic/enable; type=text; label=contentDock API Key
+contentdockApiKey = 
+
+# cat=basic/enable; type=text; label=contentDock client subdomain
+contentdockClientSubdomain = 
+
+# cat=basic/enable; type=text; label=Your program agent
+programAgent = TYPO3
+
+# cat=basic/enable; type=text; label=contentDock Request URL
+contentdockRequestURL = https://www.contentdock.com/api
+
+

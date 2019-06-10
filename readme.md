@@ -28,7 +28,7 @@ More information about the API:
 
 ### 1. Clone the repository
 
-* `git clone https://github.com/edit/contentdock-api-typo3.git`
+* `git clone https://github.com/edit/contentdock-api-typo3.git contentdock`
 
 
 ###  2. Extend the tables that you want to transfer to contentDock with the field
